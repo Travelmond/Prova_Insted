@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  projectovacinacao:
+    image: ${DOCKER_REGISTRY-}projectovacinacao
+    build:
+      context: .
+      dockerfile: ./Dockerfile
